@@ -72,12 +72,18 @@ WSGI_APPLICATION = 'saude.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# ...existing code...
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'hack',
+        'USER': 'eosan',
+        'PASSWORD': 'medapp123',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
+# ...existing code...
 
 
 # Password validation
